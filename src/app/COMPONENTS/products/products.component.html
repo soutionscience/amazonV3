@@ -1,0 +1,17 @@
+
+
+<div class="products" *ngIf="products">
+    <div class="product wrap" *ngFor="let p of products">
+    
+        <mat-card >
+            <p> <strong>{{p.title}}</strong></p>
+            <p>$ <strong>{{p.price}}</strong></p>
+            <img src="{{p.images}}">
+            <button class="products_button" (click)="add_to_cat(p)">Add to Cart</button>
+
+        </mat-card>
+
+    </div>
+   
+
+</div>
