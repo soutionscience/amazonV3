@@ -22,5 +22,8 @@ export class CheckoutComponent implements OnInit {
   if_empty(){
     return this.shopping_cart.getCartLength() == 0?true:false
   }
+  deleteEventHandler(){
+    this.getProducts()
+  }
 
 }

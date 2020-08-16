@@ -35,4 +35,14 @@ export class ShoppingCartService {
     console.log('get ', products)
     //return this.getProducts().length;
   }
+  removeItem(p){
+    console.log('p', p)
+    let shopping_cart = this.getProducts();
+    const index = shopping_cart.findIndex(item=> item.id === p.id)
+    if(index >=0){
+      shopping_cart.splice(index,1);
+     return  localStorage.setItem('shopping_cart', JSON.stringify(shopping_cart))
+
+    }
+  }
 }

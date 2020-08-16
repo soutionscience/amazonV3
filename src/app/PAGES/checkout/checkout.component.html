@@ -11,7 +11,7 @@
         </div>
         <div class="checkout_not_empty" *ngIf="products">
             <p><strong>Shopping Cart</strong></p>
-            <app-checkout-products [checkout_products] = "products"></app-checkout-products>
+            <app-checkout-products [checkout_products] = "products" (deleteEvent)="deleteEventHandler($event)"></app-checkout-products>
         </div>
     </div>
         <div class="checkout_right">Red</div>

@@ -12,9 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+
 import { FOOTERComponent } from './COMPONENTS/footer/footer.component';
 import { CheckoutComponent } from './PAGES/checkout/checkout.component';
-import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component'
+import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
+
 
 
 
@@ -35,7 +38,8 @@ import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checko
     BrowserAnimationsModule,
     MatIconModule,
     MatFormFieldModule,
-    MatCardModule
+    MatCardModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

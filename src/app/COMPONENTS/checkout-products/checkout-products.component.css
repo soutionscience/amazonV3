@@ -25,6 +25,11 @@
     height: 20px;
     object-fit: contain;
 }
+.checkout_product_in_stock{
+    color:#067D62!important;
+    font-size: 12px!important;
+    line-height: 1.5!important;
+}
 .checkout_product_gift{
     display: flex;
     flex-direction: row;
@@ -32,4 +37,24 @@
 .checkout_product_gift >input{
     margin-right: 5px;
     margin-left: 5px;
+}
+.checkout_product_more{
+    text-decoration: none;
+    margin-left: 5px;
+    color:#0066c0;
+
+}
+.checkout_options{
+    display: flex;
+    
+}
+.checkout_options > a{
+  text-decoration: none;
+  margin: 8px;
+  color: #0066c0;
+  height: 20px;
+  font-size: 12px !important;
+  padding-left: 8px;
+  border-left: solid lightgray 1px;
+  cursor: pointer;
 }
