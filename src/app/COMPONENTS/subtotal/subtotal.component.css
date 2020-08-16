@@ -1,7 +1,7 @@
 .subtotal{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 300px;
     height: 100px;
     padding: 20px;
@@ -17,7 +17,13 @@
 .subtotal_gift{
     display: flex;
     flex-direction: row;
+    font-size: 11px !important;
     
+}
+.subtotal_gift > p{
+    font-size: 11px !important;
+
+
 }
 
 .subtotal_gift > input{
