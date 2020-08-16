@@ -45,4 +45,9 @@ export class ShoppingCartService {
 
     }
   }
+  getTotal(){
+    let shopping_cart = this.getProducts();
+    return shopping_cart?.reduce((acc, item)=> acc+item.price, 0)
+
+  }
 }

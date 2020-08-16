@@ -17,6 +17,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { FOOTERComponent } from './COMPONENTS/footer/footer.component';
 import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
+import { SubtotalComponent } from './COMPONENTS/subtotal/subtotal.component';
 
 
 
@@ -30,7 +31,8 @@ import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checko
     ProductsComponent,
     FOOTERComponent,
     CheckoutComponent,
-    CheckoutProductsComponent
+    CheckoutProductsComponent,
+    SubtotalComponent
   ],
   imports: [
     BrowserModule,
