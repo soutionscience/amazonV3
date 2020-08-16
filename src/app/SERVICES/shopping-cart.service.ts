@@ -11,9 +11,9 @@ export class ShoppingCartService {
 
   addProduct = (product: Product)=>{
     let products = this.getProducts();
-    if(products != null){
-      this.products.push(product);
-      localStorage.setItem('shopping_cart', JSON.stringify(this.products))
+    if(products){
+      products.push(product);
+      localStorage.setItem('shopping_cart', JSON.stringify(products))
 
     }else{
       this.products.push(product);

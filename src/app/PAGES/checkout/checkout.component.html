@@ -1,1 +1,20 @@
-<p>checkout works!</p>
+
+<div class="checkout">
+    
+</div>
+<app-header></app-header>
+
+<div class="checkout">
+    <div class="checkout_left">
+        <div class="checkout_empty" *ngIf="!products">
+            Shopping card is empty
+        </div>
+        <div class="checkout_not_empty" *ngIf="products">
+            <p><strong>Shopping Cart</strong></p>
+            <app-checkout-products [checkout_products] = "products"></app-checkout-products>
+        </div>
+    </div>
+        <div class="checkout_right">Red</div>
+
+
+</div>

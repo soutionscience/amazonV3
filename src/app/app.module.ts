@@ -13,7 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule } from '@angular/material/form-field';
 import {MatCardModule} from '@angular/material/card';
 import { FOOTERComponent } from './COMPONENTS/footer/footer.component';
-import { CheckoutComponent } from './PAGES/checkout/checkout.component'
+import { CheckoutComponent } from './PAGES/checkout/checkout.component';
+import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component'
 
 
 
@@ -25,7 +26,8 @@ import { CheckoutComponent } from './PAGES/checkout/checkout.component'
     HeaderComponent,
     ProductsComponent,
     FOOTERComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CheckoutProductsComponent
   ],
   imports: [
     BrowserModule,

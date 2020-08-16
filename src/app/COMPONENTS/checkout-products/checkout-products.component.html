@@ -1,0 +1,19 @@
+<div class="checkout_products">
+    <p class="price">Price</p>
+    <div class="checkout_product" *ngFor="let p of checkout_products">
+       <img src="{{p.image}}" alt="" class="checkout_product_img">
+       <div class="checkout_product_info">
+           <p class="checkout_product_title">
+            {{p.title}}
+
+           </p>
+           <img src="https://cdn2.hubspot.net/hubfs/4567260/0_KZ8hBw7pQZFFt2Mt.png" alt="">
+          <div class="checkout_product_gift">
+              <input type="checkbox">
+              <p>This is a gift</p>
+          </div>
+          
+       </div>
+
+    </div>
+</div>
