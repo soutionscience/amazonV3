@@ -18,6 +18,8 @@ import { FOOTERComponent } from './COMPONENTS/footer/footer.component';
 import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
 import { SubtotalComponent } from './COMPONENTS/subtotal/subtotal.component';
+import { LoginComponent } from './PAGES/login/login.component';
+// import { LoginPipe } from './PAGES/login.pipe';
 
 
 
@@ -32,7 +34,9 @@ import { SubtotalComponent } from './COMPONENTS/subtotal/subtotal.component';
     FOOTERComponent,
     CheckoutComponent,
     CheckoutProductsComponent,
-    SubtotalComponent
+    SubtotalComponent,
+    LoginComponent
+   
   ],
   imports: [
     BrowserModule,
