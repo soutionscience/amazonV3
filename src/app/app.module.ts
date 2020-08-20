@@ -19,7 +19,10 @@ import { CheckoutComponent } from './PAGES/checkout/checkout.component';
 import { CheckoutProductsComponent } from './COMPONENTS/checkout-products/checkout-products.component';
 import { SubtotalComponent } from './COMPONENTS/subtotal/subtotal.component';
 import { LoginComponent } from './PAGES/login/login.component';
-// import { LoginPipe } from './PAGES/login.pipe';
+import {AngularFireModule} from '@angular/fire'
+import {AngularFireAuthModule} from '@angular/fire/auth'
+import {firebaseConfig} from './SHARED/firebase.config'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -42,10 +45,13 @@ import { LoginComponent } from './PAGES/login/login.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MatIconModule,
     MatFormFieldModule,
     MatCardModule,
-    MatSelectModule
+    MatSelectModule,
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
