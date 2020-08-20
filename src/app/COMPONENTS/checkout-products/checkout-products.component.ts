@@ -11,7 +11,7 @@ export class CheckoutProductsComponent implements OnInit {
   @Input() checkout_products: Product [];
   @Output() deleteEvent : EventEmitter<any> = new EventEmitter()
 
-  constructor(private shopping_cart_service: ShoppingCartService) { }
+  constructor(public shopping_cart_service: ShoppingCartService) { }
 
   ngOnInit(): void {
     console.log('products ', this.checkout_products)

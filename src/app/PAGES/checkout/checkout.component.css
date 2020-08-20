@@ -2,5 +2,14 @@
     background-color: white;
     display: flex;
     margin: 20px;
+    width: 100%;
  
+}
+.checkout_left{
+    flex: 1;
+}
+.checkout_right{
+justify-content: flex-end;
+margin-left: 20px;
+
 }

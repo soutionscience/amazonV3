@@ -8,7 +8,7 @@ import { ShoppingCartService } from 'src/app/SERVICES/shopping-cart.service';
 })
 export class SubtotalComponent implements OnInit {
 
-  constructor(private shopping_cart_service: ShoppingCartService) { }
+  constructor(public shopping_cart_service: ShoppingCartService) { }
 
   ngOnInit(): void {
   }
