@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ShoppingCartService } from 'src/app/SERVICES/shopping-cart.service';
+import { AuthService } from 'src/app/SERVICES/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,8 @@ import { ShoppingCartService } from 'src/app/SERVICES/shopping-cart.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private cart_service: ShoppingCartService) { }
+  constructor(private cart_service: ShoppingCartService,
+    public auth: AuthService) { }
 
   ngOnInit(): void {
   }
