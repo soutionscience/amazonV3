@@ -10,7 +10,7 @@ import { Product } from 'src/app/SHARED/product.model';
 export class CheckoutComponent implements OnInit {
  products: Product
 
-  constructor(private shopping_cart: ShoppingCartService) { }
+  constructor(public shopping_cart: ShoppingCartService) { }
 
   ngOnInit(): void {
     this.getProducts()

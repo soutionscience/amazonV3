@@ -40,14 +40,17 @@ export class AuthService {
   SignUp(email, password){
     return this.afAuth.createUserWithEmailAndPassword(email, password)
     .then((result)=>{
-      console.log(result.user)
+      this.router.navigate(['/'])
     }).catch((error)=>{
       window.alert(error.message)
     })
   }
   logOut(){
     console.log('log out')
-    return this.afAuth.signOut()
+    return this.afAuth.signOut().then(()=>{
+      localStorage.removeItem('user');
+      this.router.navigate(['login'])
+    })
   }
   isLoggedIn(): boolean{
     const user  = JSON.parse(localStorage.getItem('user'));

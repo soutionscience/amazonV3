@@ -6,6 +6,7 @@ import {Product} from '../SHARED/product.model'
 })
 export class ShoppingCartService {
   products: Product [] = [];
+  shopping_cart_items: any[]=[];
 
   constructor() { }
 
@@ -50,4 +51,22 @@ export class ShoppingCartService {
     return shopping_cart?.reduce((acc, item)=> acc+item.price, 0)
 
   }
+  addProduct2 = (product)=>{
+    let items = this.getProducts();
+    if(items){
+      items.push(product);
+      localStorage.setItem('shopping_cart', JSON.stringify(items))
+
+    }else{
+      this.shopping_cart_items.push(product);
+       localStorage.setItem('shopping_cart', JSON.stringify(this.shopping_cart_items))
+
+    }
+ 
+  }
+  getProducts2 =()=>{
+    let items = localStorage.getItem('shopping_cart')
+    return JSON.parse(items)
+  }
+
 }

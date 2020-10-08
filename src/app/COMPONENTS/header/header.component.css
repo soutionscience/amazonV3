@@ -10,17 +10,18 @@
 .header_top{
     height: 60px;
     background-color: #0F1111;
-    /* margin: 0px; */
     font-size: 14px;
     display:flex;
-    /* padding-top: px; */
+    color:white;
+    padding-right:8px;
+
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+  
     position: sticky;
     top: 0;
     z-index: 100; 
-    color:white;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-right:8px;
+   
 
 }
 .header_menu{
@@ -106,7 +107,10 @@
 .header_location_icon{
  object-fit: contain;
  width: 25px;
+ 
+
 }
+
 .header_search_icon{
     background-color: #febd69;
  
@@ -140,11 +144,12 @@
 
 }
 .header_cart{
+    margin-top: 10px;
     margin-left: 8px;
     display: flex;
     height: 50px;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
 
 }
 .header_cart_number{
